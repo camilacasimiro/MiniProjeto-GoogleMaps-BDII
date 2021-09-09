@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glory:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/javascript/maps.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/images/maps.png" alt="" />
+      <h1>Destiny</h1>
+    </header>
+
+    <div id="container">
+      <div id="form">
+        <form action="/pagina-processa-dados-do-form" method="post">
+          <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" />
+
+            <label for="checkin">Check-in:</label>
+            <input type="date" id="checkin" />
+
+            <label for="checkout">Check-out:</label>
+            <input type="date" id="checkout" />
+          </div>
+
+          <div id="button">
+            <button id="btn-save" type="button" onclick="save()">Salvar</button>
+
+            <button id="btn-dest" type="button" onclick="destiny()">
+              Visualize seu Destino
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="map"></div>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>

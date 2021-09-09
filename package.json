@@ -1,0 +1,29 @@
+{
+  "name": "introducao",
+  "version": "1.0.0",
+  "description": "Exemplo de uso da API do Google Maps, em conjunto com ExpressJS e Fetch API feito como apoio para o desenvolvimento do mini projeto da semana.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "10.0.0",
+    "express": "4.17.1",
+    "nodemon": "2.0.7",
+    "pg": "8.6.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bancos-de-Dados-II/Exemplo-Mapa.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Bancos-de-Dados-II/Exemplo-Mapa/issues"
+  },
+  "homepage": "https://github.com/Bancos-de-Dados-II/Exemplo-Mapa#readme"
+}
